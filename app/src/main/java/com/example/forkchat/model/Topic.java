@@ -14,11 +14,11 @@ public class Topic {
     private int commentCount;
     private String coverImage;
 
-    // 默认构造函数
+
     public Topic() {
     }
 
-    // 带参数构造函数
+
     public Topic(String id, String title, String content, String authorId, String authorName,
                  List<String> tags, String createTime, int likeCount, int commentCount, String coverImage) {
         this.id = id;
@@ -33,7 +33,7 @@ public class Topic {
         this.coverImage = coverImage;
     }
 
-    // Getters and Setters
+
     public String getId() {
         return id;
     }
