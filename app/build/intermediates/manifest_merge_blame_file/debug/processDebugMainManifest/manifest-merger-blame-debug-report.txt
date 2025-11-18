@@ -1,0 +1,243 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.forkchat"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="34" />
+10
+11    <permission
+11-->[androidx.core:core:1.13.1] D:\APP\GradleRepository\caches\8.13\transforms\c2abd26f70b8ea107f0af33093d97009\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.forkchat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.13.1] D:\APP\GradleRepository\caches\8.13\transforms\c2abd26f70b8ea107f0af33093d97009\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.13.1] D:\APP\GradleRepository\caches\8.13\transforms\c2abd26f70b8ea107f0af33093d97009\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.forkchat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.13.1] D:\APP\GradleRepository\caches\8.13\transforms\c2abd26f70b8ea107f0af33093d97009\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.1] D:\APP\GradleRepository\caches\8.13\transforms\c2abd26f70b8ea107f0af33093d97009\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:5:5-78:19
+18        android:name="com.example.forkchat.TiebaApplication"
+18-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:7:9-41
+19        android:allowBackup="true"
+19-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:6:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.13.1] D:\APP\GradleRepository\caches\8.13\transforms\c2abd26f70b8ea107f0af33093d97009\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+21        android:dataExtractionRules="@xml/data_extraction_rules"
+21-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:8:9-65
+22        android:debuggable="true"
+23        android:extractNativeLibs="true"
+24        android:fullBackupContent="@xml/backup_rules"
+24-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:9:9-54
+25        android:icon="@mipmap/ic_launcher"
+25-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:10:9-43
+26        android:label="@string/app_name"
+26-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:11:9-41
+27        android:testOnly="true"
+28        android:theme="@style/Theme.ForkChat" >
+28-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:12:9-46
+29
+30        <!-- 主Activity -->
+31        <activity
+31-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:16:9-25:20
+32            android:name="com.example.forkchat.MainActivity"
+32-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:17:13-41
+33            android:exported="true"
+33-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:18:13-36
+34            android:label="@string/app_name" >
+34-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:19:13-45
+35            <intent-filter>
+35-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:20:13-24:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:21:17-69
+36-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:21:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:23:17-77
+38-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:23:27-74
+39            </intent-filter>
+40        </activity>
+41        <activity
+41-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:27:9-30:35
+42            android:name="com.example.forkchat.PostDetailActivity"
+42-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:28:13-47
+43            android:exported="false"
+43-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:29:13-37
+44            android:label="帖子详情" />
+44-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:30:13-33
+45        <activity
+45-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:32:9-35:35
+46            android:name="com.example.forkchat.CreatePostActivity"
+46-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:33:13-47
+47            android:exported="false"
+47-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:34:13-37
+48            android:label="发布帖子" />
+48-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:35:13-33
+49        <activity
+49-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:37:9-40:35
+50            android:name="com.example.forkchat.EditPostActivity"
+50-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:38:13-45
+51            android:exported="false"
+51-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:39:13-37
+52            android:label="编辑帖子" />
+52-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:40:13-33
+53
+54        <!-- 用户资料Activity -->
+55        <activity
+55-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:43:9-46:40
+56            android:name="com.example.forkchat.activity.UserProfileActivity"
+56-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:44:13-57
+57            android:exported="false"
+57-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:46:13-37
+58            android:label="个人中心" />
+58-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:45:13-33
+59
+60        <!-- 编辑资料Activity -->
+61        <activity
+61-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:49:9-52:40
+62            android:name="com.example.forkchat.activity.EditProfileActivity"
+62-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:50:13-57
+63            android:exported="false"
+63-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:52:13-37
+64            android:label="编辑资料" />
+64-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:51:13-33
+65
+66        <!-- 修改密码Activity -->
+67        <activity
+67-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:55:9-58:40
+68            android:name="com.example.forkchat.activity.ChangePasswordActivity"
+68-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:56:13-60
+69            android:exported="false"
+69-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:58:13-37
+70            android:label="修改密码" />
+70-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:57:13-33
+71        <!-- 登录 Activity -->
+72        <activity
+72-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:60:9-63:40
+73            android:name="com.example.forkchat.activity.LoginActivity"
+73-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:61:13-51
+74            android:exported="false"
+74-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:63:13-37
+75            android:label="登录" />
+75-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:62:13-31
+76
+77        <!-- 注册 Activity -->
+78        <activity
+78-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:66:9-69:40
+79            android:name="com.example.forkchat.activity.RegisterActivity"
+79-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:67:13-54
+80            android:exported="false"
+80-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:69:13-37
+81            android:label="注册" />
+81-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:68:13-31
+82        <activity
+82-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:70:9-73:77
+83            android:name="com.example.forkchat.fc.OpinionDetailActivity"
+83-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:71:13-53
+84            android:configChanges="orientation|screenSize|keyboardHidden"
+84-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:73:13-74
+85            android:exported="false" />
+85-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:72:13-37
+86        <activity
+86-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:74:9-77:77
+87            android:name="com.example.forkchat.fc.MainActivity"
+87-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:75:13-44
+88            android:configChanges="orientation|screenSize|keyboardHidden"
+88-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:77:13-74
+89            android:exported="false" />
+89-->E:\project\Android\forkchat-v2\forkchat-v2\app\src\main\AndroidManifest.xml:76:13-37
+90
+91        <service
+91-->[androidx.room:room-runtime:2.6.1] D:\APP\GradleRepository\caches\8.13\transforms\1198d68ba1c4a7fefeae32be656328d1\transformed\room-runtime-2.6.1\AndroidManifest.xml:24:9-28:63
+92            android:name="androidx.room.MultiInstanceInvalidationService"
+92-->[androidx.room:room-runtime:2.6.1] D:\APP\GradleRepository\caches\8.13\transforms\1198d68ba1c4a7fefeae32be656328d1\transformed\room-runtime-2.6.1\AndroidManifest.xml:25:13-74
+93            android:directBootAware="true"
+93-->[androidx.room:room-runtime:2.6.1] D:\APP\GradleRepository\caches\8.13\transforms\1198d68ba1c4a7fefeae32be656328d1\transformed\room-runtime-2.6.1\AndroidManifest.xml:26:13-43
+94            android:exported="false" />
+94-->[androidx.room:room-runtime:2.6.1] D:\APP\GradleRepository\caches\8.13\transforms\1198d68ba1c4a7fefeae32be656328d1\transformed\room-runtime-2.6.1\AndroidManifest.xml:27:13-37
+95
+96        <provider
+96-->[androidx.emoji2:emoji2:1.2.0] D:\APP\GradleRepository\caches\8.13\transforms\d74f073780d0ba497f30f0291fb52484\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+97            android:name="androidx.startup.InitializationProvider"
+97-->[androidx.emoji2:emoji2:1.2.0] D:\APP\GradleRepository\caches\8.13\transforms\d74f073780d0ba497f30f0291fb52484\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+98            android:authorities="com.example.forkchat.androidx-startup"
+98-->[androidx.emoji2:emoji2:1.2.0] D:\APP\GradleRepository\caches\8.13\transforms\d74f073780d0ba497f30f0291fb52484\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+99            android:exported="false" >
+99-->[androidx.emoji2:emoji2:1.2.0] D:\APP\GradleRepository\caches\8.13\transforms\d74f073780d0ba497f30f0291fb52484\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+100            <meta-data
+100-->[androidx.emoji2:emoji2:1.2.0] D:\APP\GradleRepository\caches\8.13\transforms\d74f073780d0ba497f30f0291fb52484\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+101                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+101-->[androidx.emoji2:emoji2:1.2.0] D:\APP\GradleRepository\caches\8.13\transforms\d74f073780d0ba497f30f0291fb52484\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+102                android:value="androidx.startup" />
+102-->[androidx.emoji2:emoji2:1.2.0] D:\APP\GradleRepository\caches\8.13\transforms\d74f073780d0ba497f30f0291fb52484\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+103            <meta-data
+103-->[androidx.lifecycle:lifecycle-process:2.9.4] D:\APP\GradleRepository\caches\8.13\transforms\74060372a5e111595f54a91b2e17bf6b\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:29:13-31:52
+104                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+104-->[androidx.lifecycle:lifecycle-process:2.9.4] D:\APP\GradleRepository\caches\8.13\transforms\74060372a5e111595f54a91b2e17bf6b\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:30:17-78
+105                android:value="androidx.startup" />
+105-->[androidx.lifecycle:lifecycle-process:2.9.4] D:\APP\GradleRepository\caches\8.13\transforms\74060372a5e111595f54a91b2e17bf6b\transformed\lifecycle-process-2.9.4\AndroidManifest.xml:31:17-49
+106            <meta-data
+106-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+107                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+107-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+108                android:value="androidx.startup" />
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+109        </provider>
+110
+111        <uses-library
+111-->[androidx.window:window:1.0.0] D:\APP\GradleRepository\caches\8.13\transforms\83859e6932c64c9f3b66721225dd6c27\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+112            android:name="androidx.window.extensions"
+112-->[androidx.window:window:1.0.0] D:\APP\GradleRepository\caches\8.13\transforms\83859e6932c64c9f3b66721225dd6c27\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+113            android:required="false" />
+113-->[androidx.window:window:1.0.0] D:\APP\GradleRepository\caches\8.13\transforms\83859e6932c64c9f3b66721225dd6c27\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+114        <uses-library
+114-->[androidx.window:window:1.0.0] D:\APP\GradleRepository\caches\8.13\transforms\83859e6932c64c9f3b66721225dd6c27\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+115            android:name="androidx.window.sidecar"
+115-->[androidx.window:window:1.0.0] D:\APP\GradleRepository\caches\8.13\transforms\83859e6932c64c9f3b66721225dd6c27\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+116            android:required="false" />
+116-->[androidx.window:window:1.0.0] D:\APP\GradleRepository\caches\8.13\transforms\83859e6932c64c9f3b66721225dd6c27\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+117
+118        <receiver
+118-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+119            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+119-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+120            android:directBootAware="false"
+120-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+121            android:enabled="true"
+121-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+122            android:exported="true"
+122-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+123            android:permission="android.permission.DUMP" >
+123-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+124            <intent-filter>
+124-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+125                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+125-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+125-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+126            </intent-filter>
+127            <intent-filter>
+127-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+128                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+128-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+128-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+129            </intent-filter>
+130            <intent-filter>
+130-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+131                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+131-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+131-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+132            </intent-filter>
+133            <intent-filter>
+133-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+134                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] D:\APP\GradleRepository\caches\8.13\transforms\19e6b5ddf0ad139c69df7712397e6203\transformed\profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+135            </intent-filter>
+136        </receiver>
+137    </application>
+138
+139</manifest>

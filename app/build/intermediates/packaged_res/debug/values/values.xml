@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">ForkChat</string>
+    <string name="cancel">取消</string>
+    <string name="change_password">修改密码</string>
+    <string name="collected_topics">收藏话题</string>
+    <string name="confirm">确定</string>
+    <string name="edit_profile">编辑资料</string>
+    <string name="logout">退出登录</string>
+    <string name="logout_confirmation">确定要退出登录吗？</string>
+    <string name="my_topics">我的话题</string>
+    <string name="participated_discussions">参与讨论</string>
+    <style name="Base.Theme.ForkChat" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.ForkChat" parent="Base.Theme.ForkChat"/>
+</resources>
