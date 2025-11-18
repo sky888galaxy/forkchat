@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.forkchat.MainActivity;
 import com.example.forkchat.R;
 
 public class LoginActivity extends AppCompatActivity {
