@@ -38,6 +38,17 @@
             android:name=".activity.ChangePasswordActivity"
             android:label="修改密码"
             android:exported="false" />
+        <!-- 登录 Activity -->
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="登录"
+            android:exported="false" />
+
+        <!-- 注册 Activity -->
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:label="注册"
+            android:exported="false" />
 
     </application>
 
