@@ -1,5 +1,7 @@
 package com.example.forkchat.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +12,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.forkchat.R;
 import com.example.forkchat.model.Topic;
+import com.example.forkchat.fc.OpinionDetailActivity;
+import com.example.forkchat.fc.detail.Opinion;
 
 import java.util.List;
 
@@ -80,6 +84,16 @@ public class TopicAdapter extends RecyclerView.Adapter<TopicAdapter.TopicViewHol
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                    // 跳转到FC的观点详情页面
+                    Context context = v.getContext();
+                    Intent intent = new Intent(context, OpinionDetailActivity.class);
+                    intent.putExtra(OpinionDetailActivity.EXTRA_POST_ID, topic.getId());
+                    intent.putExtra(OpinionDetailActivity.EXTRA_POST_TITLE, topic.getTitle());
+                    intent.putExtra(OpinionDetailActivity.EXTRA_POST_CONTENT, topic.getContent());
+                    intent.putExtra(OpinionDetailActivity.EXTRA_OPINION_TYPE, Opinion.Type.SUPPLEMENT.name());
+                    context.startActivity(intent);
+                    
+                    // 同时保留原有的监听器回调
                     if (listener != null) {
                         listener.onItemClick(topic);
                     }

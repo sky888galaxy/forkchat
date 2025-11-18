@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 间距规范 -->
+    <dimen name="spacing_mini">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">12dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+    <dimen name="spacing_large">24dp</dimen>
+    <dimen name="spacing_xlarge">32dp</dimen>
+    
+    <!-- 圆角 -->
+    <dimen name="corner_small">8dp</dimen>
+    <dimen name="corner_medium">12dp</dimen>
+    <dimen name="corner_large">16dp</dimen>
+    
+    <!-- 卡片阴影 -->
+    <dimen name="card_elevation_low">2dp</dimen>
+    <dimen name="card_elevation_medium">4dp</dimen>
+    
+    <!-- 兼容旧代码 -->
+    <dimen name="spacing_comment_vertical">12dp</dimen>
+</resources>

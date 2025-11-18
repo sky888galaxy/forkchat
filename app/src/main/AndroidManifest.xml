@@ -50,6 +50,13 @@
             android:label="注册"
             android:exported="false" />
 
+        <!-- FC详情模块 - 观点详情Activity -->
+        <activity
+            android:name=".fc.OpinionDetailActivity"
+            android:label="观点详情"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
     </application>
 
 </manifest>
