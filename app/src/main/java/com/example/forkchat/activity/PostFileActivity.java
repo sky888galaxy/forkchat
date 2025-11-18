@@ -1,36 +1,60 @@
-package com.my.tieba;
+package com.example.forkchat.activity;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.text.SpannableStringBuilder;
-import android.text.Spanned;
-import android.text.style.StyleSpan;
-import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.ImageView;
+import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.activity.result.ActivityResultLauncher;
-import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProvider;
 
-import com.google.android.material.appbar.MaterialToolbar;
-import com.google.android.material.chip.Chip;
-import com.google.android.material.chip.ChipGroup;
-import com.google.android.material.textfield.TextInputEditText;
-import com.my.tieba.model.Post;
-import com.my.tieba.model.Tag;
-import com.my.tieba.utils.ImageUtils;
-import com.my.tieba.viewmodel.PostViewModel;
-import com.my.tieba.viewmodel.TagViewModel;
-import com.my.tieba.viewmodel.UserViewModel;
+import com.example.forkchat.MainActivity;
+import com.example.forkchat.R;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+public class LoginActivity extends AppCompatActivity {
+
+    private EditText etEmail, etPassword;
+    private Button btnLogin;
+    private TextView tvRegister;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+        initViews();
+        setupClickListeners();
+    }
+
+    private void initViews() {
+        etEmail = findViewById(R.id.et_email);
+        etPassword = findViewById(R.id.et_password);
+        btnLogin = findViewById(R.id.btn_login);
+        tvRegister = findViewById(R.id.tv_register);
+    }
+
+    private void setupClickListeners() {
+        btnLogin.setOnClickListener(v -> {
+            String email = etEmail.getText().toString().trim();
+            String password = etPassword.getText().toString().trim();
+
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(this, "请输入邮箱和密码", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            // 模拟登录成功
+            Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show();
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+        });
+
+        tvRegister.setOnClickListener(v -> {
+            startActivity(new Intent(this, RegisterActivity.class));
+        });
+    }
+}
 
 /**
  * 创建帖子Activity
