@@ -13,7 +13,7 @@
         android:background="?attr/colorPrimary"
         android:elevation="4dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:title="贴吧"
+        app:title="forkchat"
         app:titleTextColor="@android:color/white" />
 
     <com.google.android.material.tabs.TabLayout
